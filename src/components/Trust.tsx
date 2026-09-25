@@ -5,7 +5,7 @@ export default function Trust() {
     <section className="bg-white pb-20 md:pb-28">
       <div className="container-x grid items-center gap-12 lg:grid-cols-[1fr_1.1fr]">
         <div className="relative">
-        <img src="./images/team-tula.webp" alt="Визуализация команды клининга «Вершина» для Тулы" className="aspect-[4/3] w-full rounded-3xl object-cover" loading="lazy" decoding="async" />
+        <img src="./images/team-kazan.webp" alt="Визуализация команды клининга «Вершина» для Казани" className="aspect-[4/3] w-full rounded-3xl object-cover" loading="lazy" decoding="async" />
         <p className="mt-3 text-xs text-ink/50">Визуализация сервиса «Вершина».</p>
         </div>
         <div>

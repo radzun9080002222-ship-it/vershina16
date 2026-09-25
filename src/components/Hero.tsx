@@ -34,10 +34,10 @@ export default function Hero() {
             className="mt-1 block leading-[0.8] text-emerald text-[13vw] md:text-[66px]"
             style={{ fontFamily: "'Caveat', cursive" }}
           >
-            в Туле
+            в Казани
           </span>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-ink/70 md:text-xl">
-            Доступный клининг в каждую квартиру и дом Тулы.
+            Доступный клининг в каждую квартиру и дом Казани.
             Точная цена за 2 минуты — до приезда, а не после.
           </p>
           <div className="mt-9">
@@ -62,9 +62,9 @@ export default function Hero() {
           </dl>
         </div>
         <div className="relative">
-          <img src="./images/hero-tula.webp" alt="Чистый интерьер с видом на Тульский кремль" className="aspect-[4/5] w-full rounded-3xl object-cover" fetchPriority="high" />
+          <img src="./images/hero-kazan.webp" alt="Чистый интерьер с видом на Казанский кремль и мечеть Кул-Шариф" className="aspect-[4/5] w-full rounded-3xl object-cover" fetchPriority="high" />
           <div className="absolute right-4 top-4 rounded-full border border-white/30 bg-graphite/75 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur-sm md:right-6 md:top-6">
-            Тула · центр города
+            Казань · центр города
           </div>
           <div className="absolute -bottom-5 -left-5 hidden rounded-2xl bg-white p-5 shadow-card md:block">
             <div className="text-[11px] font-semibold uppercase tracking-widest2 text-emerald">убрано в этом месяце</div>
