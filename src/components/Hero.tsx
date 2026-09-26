@@ -29,6 +29,7 @@ export default function Hero() {
           </div>
           <h1 className="text-[17vw] font-bold leading-[0.95] tracking-tight text-graphite md:text-[120px]">
             Чисто<span className="text-emerald">.</span>
+            <span className="sr-only"> Клининг в Казани — уборка квартир и домов</span>
           </h1>
           <span
             className="mt-1 block leading-[0.8] text-emerald text-[13vw] md:text-[66px]"
