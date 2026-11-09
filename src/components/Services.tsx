@@ -20,6 +20,11 @@ export default function Services() {
         <div className="mt-12 divide-y divide-black/8 border-y border-black/8">
           {TARIFFS.map((t) => {
             const open = openId === t.id;
+            const price = t.rate
+              ? `от ${fmt(t.rate)} ₽/м²`
+              : t.rateOptions
+                ? `от ${fmt(Math.min(...t.rateOptions.map((option) => option.rate)))} ₽/м²`
+                : "индивидуально";
             return (
               <div key={t.id}>
                 <button
@@ -30,14 +35,10 @@ export default function Services() {
                   <span>
                     <span className="block text-xl font-semibold text-graphite md:text-2xl">{t.name}</span>
                     <span className="mt-1 block text-sm text-ink/55">{t.tagline}</span>
+                    <span className="mt-3 block text-base font-bold text-emerald md:hidden">{price}</span>
                   </span>
                   <span className="hidden text-right text-lg font-bold text-graphite md:block">
-                    {t.rate
-                      ? `от ${t.rate} ₽/м²`
-                      : t.rateOptions
-                        ? `от ${Math.min(...t.rateOptions.map((option) => option.rate))} ₽/м²`
-                        : "индивидуально"}
-                    <span className="block text-xs font-normal text-ink/45">мин. заказ {t.minPrice ? `${fmt(t.minPrice)} ₽` : "—"}</span>
+                    {price}
                   </span>
                   <ChevronDown className={`justify-self-end text-ink/40 transition ${open ? "rotate-180" : ""}`} size={20} />
                 </button>

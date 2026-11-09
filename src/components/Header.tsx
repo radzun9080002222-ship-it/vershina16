@@ -25,7 +25,7 @@ export default function Header() {
         </nav>
         <div className="hidden items-center gap-4 xl:flex">
           <a href={PHONE_HREF} className="text-sm font-semibold text-graphite hover:text-emerald">{PHONE}</a>
-          <a href="#calc" className="rounded-full bg-graphite px-5 py-2.5 text-[13px] font-semibold text-white transition hover:bg-emerald">Рассчитать цену</a>
+          <a href="#prices" className="rounded-full bg-graphite px-5 py-2.5 text-[13px] font-semibold text-white transition hover:bg-emerald">Смотреть цены</a>
         </div>
         <button className="xl:hidden" onClick={() => setOpen(!open)} aria-label="Меню">{open ? <X /> : <Menu />}</button>
       </div>

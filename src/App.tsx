@@ -1,7 +1,6 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Manifesto from "./components/Manifesto";
-import Calculator from "./components/Calculator";
 import Services from "./components/Services";
 import SeoCopy from "./components/SeoCopy";
 import Cases from "./components/Cases";
@@ -20,7 +19,6 @@ export default function App() {
       <main>
         <Hero />
         <Manifesto />
-        <Calculator />
         <Services />
         <SeoCopy />
         <Cases />
