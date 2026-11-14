@@ -40,7 +40,7 @@ export default function Hero() {
           </span>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-ink/70 md:text-xl">
             Доступный клининг в каждую квартиру и дом Казани.
-            Влажная уборка — от 120 ₽/м². Стоимость согласуем до приезда.
+            Влажная уборка — от 150 ₽/м². Стоимость согласуем до приезда.
           </p>
           <div className="mt-9">
             <a href={PHONE_HREF} className="btn-primary">

@@ -26,7 +26,7 @@ export default function SeoCopy() {
             <div key={item.id} className="bg-white p-6">
               <dt className="text-sm font-semibold text-graphite">{item.name}</dt>
               <dd className="mt-3 text-2xl font-bold text-emerald">
-                {item.rate === null ? "По запросу" : `от ${item.rate.toLocaleString("ru-RU")} ₽/м²`}
+                {item.rate === null ? `${item.rateOptions!.map(o => o.rate).join(" / ")} ₽/м²` : `от ${item.rate.toLocaleString("ru-RU")} ₽/м²`}
               </dd>
             </div>
           ))}
